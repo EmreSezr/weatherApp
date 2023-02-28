@@ -1,10 +1,15 @@
+body {
+  background-image: url("./background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .App {
   max-width: 800px;
-  margin-left:30%;
+  margin-left: 30%;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
-.App h1{
+.App h1 {
   margin-left: 20%;
 }
 
@@ -17,7 +22,7 @@ label {
   margin-right: 10px;
 }
 
-input[type='text'] {
+input[type="text"] {
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;

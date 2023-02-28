@@ -37,6 +37,7 @@ function App() {
   };
 
   return (
+    <div className="all">
     <div className="App">
       <h1>Weather App</h1>
       <form onSubmit={handleFormSubmit}>
@@ -54,6 +55,7 @@ function App() {
       {weatherData.map((data) => (
         <Weather key={data.location.name} data={data} />
       ))}
+    </div>
     </div>
   );
 }
