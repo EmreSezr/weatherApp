@@ -31,7 +31,7 @@ function App() {
       setCity("");
       })
       .catch((error) => {
-        alert("Şehir bulunamadı. Geçerli şehir ismi giriniz.");
+        alert("Şehir bulunamadı. Geçerli şehir ismi giriniz..");
         console.log(error);
       });
   };
