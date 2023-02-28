@@ -25,7 +25,7 @@ function App() {
     })
     .then((data) => {
       setWeatherData((prevData) => {
-        const newData = [...prevData, data].slice(-1);
+        const newData = [...prevData, data].slice(-3);
         return newData;
       });
       setCity("");
