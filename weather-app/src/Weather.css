@@ -1,0 +1,12 @@
+.Weather {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+  }
+  
+  .Weather img {
+    width: 100px;
+    height: auto;
+  }
+  
