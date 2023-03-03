@@ -1,12 +1,29 @@
 .Weather {
-    border: 2px solid #ccc;
-    padding: 20px;
+    margin-top:5%;
+    border: 1px solid;
+    padding: 5px;
     margin-bottom: 20px;
     max-width: 500px;
+    font-weight: bold;
+    background-color:turquoise;
+    color:darkblue;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
   }
   
   .Weather img {
     width: 100px;
     height: auto;
+    margin-left: 40%;
   }
+
+  h2{
+    text-align: center;
+  }
+
+ .Weather-Results{
+  text-align: center;
+ }
+
+
   
