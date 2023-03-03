@@ -14,7 +14,7 @@ function App() {
     event.preventDefault();
     setWeatherData([]);
     fetch(
-      `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no&lang=tr`
     )
       .then((response) => {
         if (!response.ok) {
