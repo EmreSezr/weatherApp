@@ -49,7 +49,18 @@ function App() {
             value={city}
             onChange={handleInputChange}
           />
-          <button type="submit">Gönder</button>
+          <button className="submit-button" type="submit">
+            Gönder
+          </button>
+        </form>
+
+        <form id="popular-search" onSubmit={handleFormSubmit}>
+          <h4>Popular Search: </h4>
+          <button className="popular-search-button"  value="İstanbul" onClick={handleInputChange}>İstanbul</button>
+          <button className="popular-search-button"  value="İzmir" onClick={handleInputChange}>İzmir</button>
+          <button className="popular-search-button" value="Ankara" onClick={handleInputChange}>Ankara</button>
+          <button className="popular-search-button" value="Bursa" onClick={handleInputChange}>Bursa</button>
+          <button className="popular-search-button"  value="Antalya" onClick={handleInputChange}>Antalya</button>
         </form>
         {weatherData.map((data) => (
           <Weather key={data.location.name} data={data} />

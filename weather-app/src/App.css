@@ -1,3 +1,4 @@
+/*-------------------------TAG SELECTOR--------------------------------*/
 body {
   width: 100vw;
   height: 100vh;
@@ -5,15 +6,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.App {
-  max-width: 800px;
-  margin-left: 30%;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-.App h1 {
-  margin-left: 20%;
 }
 
 form {
@@ -32,7 +24,45 @@ input[type="text"] {
   border: 2px solid #ccc;
 }
 
-button {
+button:hover {
+  background-color: #0059b3;
+}
+
+/*-------------------------ID SELECTOR--------------------------------*/
+#popular-search{
+  display: block;
+}
+#popular-search h4 {
+  font-size: 15px;
+}
+
+.popular-search-button {
+  display: inline;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 2%;
+  justify-content: space-between;
+}
+
+/*-------------------------CLASS SELECTOR--------------------------------*/
+.App {
+  max-width: 800px;
+  margin-left: 30%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.App h1 {
+  margin-left: 20%;
+}
+
+.submit-button {
+  display: block;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #0066cc;
@@ -40,8 +70,4 @@ button {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #0059b3;
 }
