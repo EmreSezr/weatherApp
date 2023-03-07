@@ -5,7 +5,6 @@ import "./App.css";
 function App() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState([]);
-  //const API_KEY = "c4389769c0dc4abe874133129232802";
   const API_KEY = "32b9eecfd1d01ea329051fd199573b3d" ;
 
   const handleInputChange = (event) => {
@@ -16,7 +15,6 @@ function App() {
     event.preventDefault();
     setWeatherData([]);
     fetch(
-      // `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no&lang=tr`
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=tr&units=metric`
     )
       .then((response) => {
