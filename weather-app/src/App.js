@@ -17,7 +17,7 @@ function App() {
     setWeatherData([]);
     fetch(
       // `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no&lang=tr`
-      `https:api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=tr&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=tr&units=metric`
     )
       .then((response) => {
         if (!response.ok) {
