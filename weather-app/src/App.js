@@ -5,7 +5,8 @@ import "./App.css";
 function App() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState([]);
-  const API_KEY = "32b9eecfd1d01ea329051fd199573b3d" ;
+  const API_KEY =process.env.REACT_APP_API_KEY;
+
 
   const handleInputChange = (event) => {
     setCity(event.target.value);
